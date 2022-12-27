@@ -1,0 +1,23 @@
+@mixin fz-footer
+    font-size: 24px
+    line-height: 39px
+    letter-spacing: 0.1em
+
+    color: #FFFFFF
+
+.footer
+    width: calc( 100% - 4px )
+    border: 2px solid #AD02FE
+    &__container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 0 15px
+    &__items-counter
+        @include fz-footer
+
+    &__clear
+        cursor: pointer
+        border: none
+        background-color: transparentize(white,1 )
+        @include fz-footer
