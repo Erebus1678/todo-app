@@ -3,8 +3,8 @@ import { createSlice, nanoid } from '@reduxjs/toolkit'
 const initialState = [
     {
         id: nanoid(),
-        text: 'Create a portfolio',
-        compleate: false
+        text: 'Learn Redux',
+        compleate: true
     }
 ]
 const TodoSlice = createSlice({
